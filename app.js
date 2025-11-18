@@ -21,7 +21,12 @@ function searchCountry() {
   loading.classList.add("show");
 
   fetch(`https://restcountries.com/v3.1/name/${countryName}`)
-    .then(response =>  response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Country not found");
+      }
+      return response.json();
+    })
     .then(data => {
       const country = data[0];
 
@@ -80,4 +85,11 @@ function toggleTheme() {
     btn.textContent = '🌙 Dark Mode';
   }
 }
+
+fetch('http://api.weatherapi.com/v1/current.json?key=cc44f9a2485f4c548b690317251211&q=panadura')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Weather Data:', data);
+  })
+
 

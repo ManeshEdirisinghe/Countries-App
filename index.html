@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Info</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Info</title>
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
-
 <body>
-
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
-
-    <div class="container">
-        <h1>Country Explorer</h1>
-
-        <div class="search-section">
-            <input type="text" id="country-input" placeholder="Enter country name (e.g., Japan, Brazil, France)">
-            <p class="hint">Press Enter to search</p>
-        </div>
-
-        <div class="loading" id="loading">Searching...</div>
-        <div class="error" id="error"></div>
-
-        <div id="country-info">
-            <div class="country-header">
-                <h2 id="country-name"></h2>
-                <div id="country-flag"></div>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-item">
-                    <p>Capital</p>
-                    <span id="country-capital"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Population</p>
-                    <span id="country-population"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Region</p>
-                    <span id="country-region"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Subregion</p>
-                    <span id="country-subregion"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Languages</p>
-                    <span id="country-languages"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Currencies</p>
-                    <span id="country-currencies"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Area</p>
-                    <span id="country-area"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Timezones</p>
-                    <span id="country-timezones"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Calling Codes</p>
-                    <span id="country-callingcodes"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Demonyms</p>
-                    <span id="country-demonyms"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Borders</p>
-                    <span id="country-borders"></span>
-                </div>
-
-                <div class="info-item">
-                    <p>Gini Index</p>
-                    <span id="country-gini"></span>
-                </div>
-            </div>
-
-            <div id="country-map"></div>
-        </div>
+  <div class="container">
+    <h1>🌍 Country Explorer</h1>
+    
+    <div class="search-section">
+      <input type="text" id="country-input" placeholder="Enter country name (e.g., Japan, Brazil, France)">
+      <p class="hint">Press Enter to search</p>
     </div>
+
+    <div class="loading" id="loading">Searching...</div>
+    <div class="error" id="error"></div>
+
+    <div id="country-info">
+      <div class="country-header">
+        <h2 id="country-name"></h2>
+        <div id="country-flag"></div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <p>Capital</p>
+          <span id="country-capital"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Population</p>
+          <span id="country-population"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Region</p>
+          <span id="country-region"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Subregion</p>
+          <span id="country-subregion"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Languages</p>
+          <span id="country-languages"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Currencies</p>
+          <span id="country-currencies"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Area</p>
+          <span id="country-area"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Timezones</p>
+          <span id="country-timezones"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Calling Codes</p>
+          <span id="country-callingcodes"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Demonyms</p>
+          <span id="country-demonyms"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Borders</p>
+          <span id="country-borders"></span>
+        </div>
+
+        <div class="info-item">
+          <p>Gini Index</p>
+          <span id="country-gini"></span>
+        </div>
+      </div>
+
+      <div id="country-map"></div>
+    </div>
+  </div>
 
     <script src="app.js"></script>
 </body>
-
 </html>

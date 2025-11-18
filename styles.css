@@ -7,7 +7,7 @@
 
 :root {
 
-  --bg-gradient: linear-gradient(135deg, #0f9bdc 0%, #103363 100%);
+  --bg-gradient: linear-gradient(135deg, #3157f3 0%, #011634 100%);
   --card-bg: rgba(255, 255, 255, 0.95);
   --text-color: #1a1a1a;
   --border-color: rgba(0, 0, 0, 0.1);
